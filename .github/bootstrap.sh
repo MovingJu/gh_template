@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-time setup after "Use this template": GitHub does not copy rulesets or merge
 # settings from a template, so apply them with the GitHub CLI (needs admin rights).
-# Usage: scripts/bootstrap.sh [OWNER/NAME]   (default: the repo of the current directory)
+# Usage: .github/bootstrap.sh [OWNER/NAME]   (default: the repo of the current directory)
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 

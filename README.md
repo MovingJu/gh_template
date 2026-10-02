@@ -8,7 +8,7 @@ Template repository that enforces **commit, PR and issue conventions** with plai
 2. Apply the settings GitHub does not copy from templates (needs the [GitHub CLI](https://cli.github.com/) and admin rights):
 
    ```sh
-   scripts/bootstrap.sh
+   .github/bootstrap.sh
    ```
 
 Rulesets on private repositories need a paid GitHub plan; public repositories are free.
@@ -27,7 +27,7 @@ The subject can be in any language; only the `type(scope): subject` structure is
 
 ## Good to know
 
-- The ruleset requires 0 approvals so a solo maintainer can merge. Raise `required_approving_review_count` for teams, then re-run `scripts/bootstrap.sh`.
+- The ruleset requires 0 approvals so a solo maintainer can merge. Raise `required_approving_review_count` for teams, then re-run `.github/bootstrap.sh`.
 - Required check names must match the job names (`PR title`, `Commit messages`).
 - Don't add `paths` filters to these workflows: a skipped workflow leaves a required check pending forever.
 - Actions are pinned to SHAs and Dependabot keeps them updated, using a `ci(deps)` prefix so its PRs pass the checks.
